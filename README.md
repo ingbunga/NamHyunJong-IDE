@@ -1,3 +1,7 @@
 # NamHyunJong-IDE
 
-만나보세요.
+ide for language NamHyunJong.
+
+## web-demo
+
+[demo](https://ingbunga.github.io/NamHyunJong-IDE/build/index.html)
