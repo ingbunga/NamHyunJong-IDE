@@ -31,7 +31,7 @@ function App() {
       parse(code.replace(/\r\n/gi, '\n')).forEach(e => _eval(e));
     }
     catch (e) {
-      AddToOutput(e);
+      AddToOutput(String(e));
       console.error(e);
     }
   }
@@ -46,8 +46,8 @@ function App() {
 
   const fitSize = function () {
     setInterval(() => {
-      setMonacoH(wrapperRef.current.offsetHeight);
-      setMonacoW(wrapperRef.current.offsetWidth);
+      setMonacoH(wrapperRef?.current?.offsetHeight || 0);
+      setMonacoW(wrapperRef?.current?.offsetWidth || 0);
     }, 0);
   };
 
